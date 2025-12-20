@@ -1,42 +1,18 @@
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+# OS
+.DS_Store
+Thumbs.db
 
-# Test binary, built with `go test -c`
-*.test
-
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
-
-# Dependency directories (remove the comment below to include it)
-vendor/
-
-# Go workspace file
-go.work
-
-# Environment files
-.env
-.env.*
-
-# IDE specific files
+# IDE
 .idea/
 .vscode/
 *.swp
 *.swo
 
-# Config files with sensitive data
-config.yml
-
-# Data directories
+# Local data
 data/
-data/postgres/
-data/redis/
-
-# Binaries directory
-bin/ 
-
-# Logs directory
 logs/
+
+# Environment
+.env
+.env.local
+.env.*.local

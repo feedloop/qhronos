@@ -1,0 +1,71 @@
+{
+  "name": "@qhronos/sdk",
+  "version": "0.1.0",
+  "description": "Official JavaScript/TypeScript SDK for Qhronos - Event Scheduling and Workflow Orchestration Platform",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format": "prettier --write src",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "qhronos",
+    "scheduler",
+    "workflow",
+    "events",
+    "cron",
+    "jobs",
+    "webhooks",
+    "orchestration"
+  ],
+  "author": "Qhronos Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/feedloop/qhronos-monorepo.git",
+    "directory": "qhronos-js-sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/feedloop/qhronos-monorepo/issues"
+  },
+  "homepage": "https://github.com/feedloop/qhronos-monorepo#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "eslint": "^8.55.0",
+    "prettier": "^3.1.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  },
+  "peerDependencies": {
+    "typescript": ">=5.0.0"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  }
+}
+
